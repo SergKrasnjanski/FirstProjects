@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+
+<tiles-definitions>  
+ 
+   <!-- Base Definition -->
+   <definition name="base-definition" 
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/template/defaultHeader.jsp" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/defaultMenu.jsp" />   
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/template/defaultFooter.jsp" />  
+   </definition>  
+ 
+   <!-- Home Page -->
+   <definition name="startPage" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/startPage.jsp" />  
+   </definition>
+   
+   <definition name="incorrectUser" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/incorrectUser.jsp" />  
+   </definition>
+   
+    <!-- UserChoice Page -->
+   <definition name="userChooseTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/userMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/userChooseTest.jsp" />  
+   </definition> 
+   
+   <!-- UserChoice Page No tests -->
+   <definition name="userAnyTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/userMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/emptyTest.jsp" />  
+   </definition> 
+   
+   <definition name="passTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/userMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/passTest.jsp" />  
+   </definition> 
+   
+   <definition name="result" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/userMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/resultPage.jsp" />  
+   </definition>
+
+    <!-- Admin First Page -->
+   <definition name="adminHomePage" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/adminHomePage.jsp" />  
+   </definition>
+   
+   <!-- Admin Add Test -->
+   <definition name="addTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/addTest.jsp" />  
+   </definition>
+   
+   <definition name="addTestSuccess" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/GreetingAddTest.jsp" />  
+   </definition>
+   
+   <definition name="adminAnyTests" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/emptyTest.jsp" />  
+   </definition>
+   
+   <definition name="deleteTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/deleteTest.jsp" />  
+   </definition>
+   
+   <definition name="deleteTestSuccess" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/GreetingDeleteTest.jsp" />  
+   </definition>
+  
+   <definition name="incorrectChoise" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/incorrectChoise.jsp" />  
+   </definition>
+   
+   <definition name="adminChooseTest" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/adminChooseOneTest.jsp" />  
+   </definition>
+   
+   <definition name="addQuestion" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/addQuestion.jsp" />  
+   </definition>
+   
+   <definition name="chooseRightAnswer" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/chooseRightAnswer.jsp" />  
+   </definition>
+   
+   <definition name="adminChooseTest2" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/adminChooseOneTestForDelQuestion.jsp" />  
+   </definition>
+   
+   <definition name="deleteQuestions" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/deleteQuestion.jsp" />  
+   </definition>
+   
+   <definition name="deleteQuestionsSuccess" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/GreetingDeleteQuestion.jsp" />  
+   </definition>
+   
+   <definition name="addUser" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/addUser.jsp" />  
+   </definition>
+   
+   <definition name="addUserSuccess" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/GreetingAddUser.jsp" />  
+   </definition>
+   
+   <definition name="deleteUser" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/deleteUser.jsp" />  
+   </definition>
+   
+   <definition name="deleteUser" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/deleteUser.jsp" />  
+   </definition>
+   
+    <definition name="adminAnyUser" extends="base-definition">  
+        <put-attribute name="title" value="Welcome" /> 
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+        <put-attribute name="body" value="/WEB-INF/views/pages/emptyUser.jsp" />  
+    </definition>
+    
+    <definition name="deleteUserSuccess" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/GreetingDeleteUser.jsp" />  
+    </definition>
+    
+    <definition name="showUser" extends="base-definition">  
+       <put-attribute name="title" value="Welcome" /> 
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/template/adminMenu.jsp" /> 
+       <put-attribute name="body" value="/WEB-INF/views/pages/showUsers.jsp" />  
+    </definition>
+ 
+</tiles-definitions>

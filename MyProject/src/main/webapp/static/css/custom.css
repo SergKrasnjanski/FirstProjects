@@ -1,0 +1,27 @@
+.has-error{
+	color:red;
+}
+
+.layer1 {
+        background-color: lavender; /* Цвет фона слоя */
+        border: 2px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 2px*/
+        margin: 5px 5px 5px 5px;
+        padding: 5px; /* Поля вокруг текста */
+        float: left; /* Обтекание по правому краю */
+        width: 400px; /* Ширина слоя */
+        height:500px;
+        }
+                    
+.layer2 {
+        background-color: lavender; /* Цвет фона слоя */
+        border: 2px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 2px*/
+        margin: 5px 5px 5px 5px;
+        padding: 5px; /* Поля вокруг текста */
+        width: 800px; /* Ширина слоя */
+        height:500px;
+        float: left; /* Обтекание по правому краю */
+        }
+                    
+.clear {
+        clear: left; /* Отмена обтекания */
+       }
